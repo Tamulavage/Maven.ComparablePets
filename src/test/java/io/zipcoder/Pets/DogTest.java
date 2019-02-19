@@ -10,7 +10,7 @@ public class DogTest{
     @Test
     public void dogSpeakTest() {
         //Given
-        Dog myDog = new Dog();
+        Dog myDog = new Dog(null);
 
         //When
         String actual = myDog.speak();

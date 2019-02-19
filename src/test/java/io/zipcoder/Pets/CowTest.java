@@ -9,7 +9,7 @@ public class CowTest {
     @Test
     public void cowSpeakTest() {
         //Given
-        Cow myCow = new Cow();
+        Cow myCow = new Cow(null);
 
         //When
         String actual = myCow.speak();

@@ -10,7 +10,7 @@ public class CatTest {
     @Test
     public void catSpeakTest() {
         //Given
-        Cat myCat = new Cat();
+        Cat myCat = new Cat(null);
 
         //When
         String actual = myCat.speak();

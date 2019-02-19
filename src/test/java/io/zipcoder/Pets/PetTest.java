@@ -14,13 +14,13 @@ public class PetTest {
     //Inheritance test
     @Test
     public void testInheritance(){
-        Pet p = new Cat();
+        Pet p = new Cat(null);
         Assert.assertTrue(p instanceof Pet);
     }
     @Test
     public void petsetNameTest() {
         //Given
-        Pet myCat = new Pet();
+        Pet myCat = new Pet(null);
         String actual = "Spot";
 
         //When
@@ -33,7 +33,7 @@ public class PetTest {
     @Test
     public void dogSpeakTest() {
         //Given
-        Pet myDog = new Dog();
+        Pet myDog = new Dog(null);
         String expected = "Bark!";
 
         //When
@@ -46,7 +46,7 @@ public class PetTest {
     @Test
     public void catSpeakTest() {
         //Given
-        Pet myCat = new Cat();
+        Pet myCat = new Cat(null);
         String expected = "Meow!";
 
         //When
@@ -58,7 +58,7 @@ public class PetTest {
     @Test
     public void cowSpeakTest() {
         //Given
-        Pet myCow = new Cow();
+        Pet myCow = new Cow(null);
         String expected = "Moo!";
 
         //When
