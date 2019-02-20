@@ -6,10 +6,7 @@ import io.zipcoder.pets.Cow;
 import io.zipcoder.pets.Dog;
 import io.zipcoder.pets.Pet;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.SortedMap;
+import java.util.*;
 
 public class Application {
 
@@ -25,6 +22,8 @@ public class Application {
         List<String> petType = new ArrayList<String>();
         List<String> petName = new ArrayList<String>();
         List<Pet> pet = new ArrayList<Pet>();
+        //Pet pet = new Pet;
+
 
         Scanner scanner = new Scanner(System.in);
 
@@ -57,6 +56,9 @@ public class Application {
                 pet.add(cow);
             }
         }
+
+        Collections.sort(pet);
+
 
         //******* Used before classes
 /*

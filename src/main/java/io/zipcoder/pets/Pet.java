@@ -1,6 +1,8 @@
 package io.zipcoder.pets;
 
-public class Pet {
+import java.util.Comparator;
+
+public class Pet implements Comparable<Pet>, Comparator<Pet> {
 
     private String name;
 
@@ -9,6 +11,33 @@ public class Pet {
 
     public Pet(String name) {
         this.name = name;
+    }
+
+    public int compare(Pet val1, Pet val2) {
+
+        return val1.getName().compareTo(val2.getName());
+    }
+
+    public int compareTo(Pet pet){
+        //int retVal = 0;
+        //****** Works - put commenting out to progress in lab
+        /* if(this.name.compareTo(pet.name) == 0)
+         {// tie breaker
+          //   obj instance of class
+
+
+             if(pet instanceof Cat) {
+                 retVal = -1;
+             }
+
+
+         }
+         else {
+             retVal= this.name.compareTo(pet.name);
+         }*/
+
+         return this.name.compareTo(pet.name);
+
     }
 
     public void setName(String name) {
