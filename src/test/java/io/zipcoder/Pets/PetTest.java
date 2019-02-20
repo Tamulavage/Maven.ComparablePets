@@ -7,6 +7,8 @@ import io.zipcoder.pets.Pet;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Comparator;
+
 import static org.junit.Assert.*;
 
 public class PetTest {
@@ -67,5 +69,7 @@ public class PetTest {
         //Then
         Assert.assertEquals(expected,actual);
     }
+
+
 
 }
