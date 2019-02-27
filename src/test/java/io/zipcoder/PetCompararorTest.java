@@ -18,7 +18,7 @@ public class PetCompararorTest {
         // Given
         Pet myCat1 = new Cat(null);
         Pet myCat2 = new Cat(null);
-        Comparator<Pet> petCompare= (Comparator<Pet>)new PetComparator();
+        Comparator<Pet> petCompare = (Comparator<Pet>) new PetComparator();
 
         // When
         Integer actual = petCompare.compare(myCat1, myCat2);
@@ -34,7 +34,7 @@ public class PetCompararorTest {
         // Given
         Pet myDog1 = new Dog(null);
         Pet myDog2 = new Dog(null);
-        Comparator<Pet> petCompare= (Comparator<Pet>)new PetComparator();
+        Comparator<Pet> petCompare = (Comparator<Pet>) new PetComparator();
 
         // When
         Integer actual = petCompare.compare(myDog1, myDog2);
@@ -50,7 +50,7 @@ public class PetCompararorTest {
         // Given
         Pet myCat1 = new Cat(null);
         Pet myCat2 = new Dog(null);
-        Comparator<Pet> petCompare= (Comparator<Pet>)new PetComparator();
+        Comparator<Pet> petCompare = (Comparator<Pet>) new PetComparator();
 
         // When
         Integer actual = petCompare.compare(myCat1, myCat2);
@@ -66,7 +66,7 @@ public class PetCompararorTest {
         // Given
         Pet myCat1 = new Cat(null);
         Pet myCow1 = new Cow(null);
-        Comparator<Pet> petCompare= (Comparator<Pet>)new PetComparator();
+        Comparator<Pet> petCompare = (Comparator<Pet>) new PetComparator();
 
         // When
         Integer actual = petCompare.compare(myCat1, myCow1);
@@ -83,7 +83,7 @@ public class PetCompararorTest {
         // Given
         Pet myDog1 = new Dog(null);
         Pet myCow1 = new Cow(null);
-        Comparator<Pet> petCompare= (Comparator<Pet>)new PetComparator();
+        Comparator<Pet> petCompare = (Comparator<Pet>) new PetComparator();
 
         // When
         Integer actual = petCompare.compare(myCow1, myDog1);
